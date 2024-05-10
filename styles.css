@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #272F5D;
+    color: #fff;
+  }
+  
+  .logo img {
+    width: 400px;
+    height: auto;
+    margin: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transform: scale(1, 1);
+  }
+
+  p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .equipo{
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
+  }
+
+  .nosotros{
+    padding: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  .galeria{
+    align-items: center;
+  }
+
+  nav ul li a:hover {
+    transition: all 0.5s;
+    transform: scale(1.2, 1.2);
+  }
+  
+  /* Estilos para el footer */
+  footer {
+    background-color: #826BE0;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .seccion-footer {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  main{
+    background-color: #272F5D;
+  }
+  
+ .ip{
+  width: 100%;
+
+ }
+
+  /* Estilos para hacer responsive */
+  @media screen and (max-width: 768px) {
+    .logo img {
+      width: 80px;
+    }
+  
+    nav ul li {
+      margin-right: 10px;
+      
+    }
+
+
+  
+    footer {
+      flex-wrap: wrap;
+    }
+  
+    .seccion-footer {
+      flex-basis: calc(50% - 10px);
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .logo img {
+      width: 60px;
+    }
+  
+    nav ul li {
+      margin-right: 5px;
+    }
+
+    h3{
+      font-weight: bold;
+      text-align: center;
+      
+    }
+
+    .map{
+      align-items: center;
+      text-align: center;
+    }
+  
+    footer {
+      flex-direction: column;
+      
+    }
+  
+    .seccion-footer {
+      flex-basis: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
